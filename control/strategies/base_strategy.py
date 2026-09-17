@@ -13,11 +13,11 @@ Note on BESS access: for every strategy, the electrolyzer+DAC may use only
 PV surplus, never the BESS (exactly as in the project's earlier,
 already-validated baseline_sim.py/smart_sim.py). We tried changing this once
 (giving them BESS access up to a reserve threshold), but it turned out that
-the maintenance energy need of just one winter night (~760 kWh) exceeds the
-entire reserve range examined (max. 40% = 800 kWh) -- even a "perfect"
-reserve would have lasted just barely one single night, with no chance
-whatsoever of multi-day protection. See simulation/strategy_sweep.py for
-the detailed explanation.
+the maintenance energy need of just one winter night (~760 kWh) already uses
+up nearly all of the entire reserve range examined (max. 40% = 800 kWh) --
+even a "perfect" reserve would have lasted just barely one single night,
+with no chance whatsoever of multi-day protection. See
+simulation/strategy_sweep.py for the detailed explanation.
 
 The difference between the 7 strategies is therefore not in the degree of
 BESS access, but in when and based on what signal they fully switch off the

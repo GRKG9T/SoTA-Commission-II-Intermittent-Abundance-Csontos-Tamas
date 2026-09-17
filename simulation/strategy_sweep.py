@@ -18,9 +18,9 @@ min_soc).
 An earlier version tried to also give the electrolyzer/DAC access to the
 BESS, up to a "reserve threshold" that varied by strategy -- this failed
 because the maintenance energy need of just one cold night
-(~14 hours x 50 kW / 0.92 efficiency ~= 760 kWh) already exceeds the
-entire reserve range under study (max. 40% = 800 kWh). In other words,
-even a "perfectly" large reserve would only just barely survive a single
+(~14 hours x 50 kW / 0.92 efficiency ~= 760 kWh) already uses up nearly all
+of the entire reserve range under study (max. 40% = 800 kWh). In other
+words, even a "perfectly" large reserve would only just barely survive a single
 night, with no chance of multi-day protection -- and instead of a
 300+ cold-starts/year difference between the 7 strategies, all of them
 (except the two full-shutdown strategies) performed equally poorly.
@@ -209,8 +209,9 @@ def simulate_with_strategy(
         # give the industrial loads partial access to the BESS via a
         # reserve threshold, but it turned out that already the
         # maintenance energy need of a single cold night (~760 kWh)
-        # exceeds the entire reserve range under study (max. 40% =
-        # 800 kWh) -- meaning even a "perfectly" tuned reserve would
+        # already uses up nearly all of the entire reserve range under
+        # study (max. 40% = 800 kWh) -- meaning even a "perfectly" tuned
+        # reserve would
         # barely survive a single night, with no chance of multi-day
         # protection. The difference between the strategies is therefore
         # not in how much BESS access they get, but in when and based on
