@@ -17,8 +17,9 @@ maintenance_kw -- see control/controller.py's original explanation).
 This catches cases where the deficit is most severe in the middle of the
 window (not just looking at the summed final result), so it handles
 forecast error the best -- but it performs a full trajectory calculation
-every hour (not just a single summation), which makes it the most
-computationally demanding strategy.
+every hour (not just a single summation). That extra arithmetic is why it
+carries the highest complexity score (5), not because it is measurably
+slower: all 84 simulations together still finish in under a minute.
 
 When activated -- just like the precharge (6.) strategy -- it fully
 shuts down the electrolyzer and the DAC.
