@@ -1,0 +1,5 @@
+location,threshold_hours,reserve_fraction,forecast_error_std,coldstart_count,lost_production_hours,methane_output_kwh,bess_deep_discharge,curtailed_kwh,reactor_warm_fraction_pct,reserve_active_hours
+sevilla,12,0.1,0.0,25,258,435856.17815982393,41,6.07403419734209,44.42922374429224,642
+sevilla,12,0.25,0.0,7,78,444254.21704847366,14,5.4494104040290665,45.54794520547945,747
+sevilla,24,0.1,0.0,12,127,442096.6980684371,26,0.0,45.25114155251141,607
+sevilla,24,0.25,0.0,0,0,446967.90928294923,1,1.0657589107022076,45.99315068493151,647

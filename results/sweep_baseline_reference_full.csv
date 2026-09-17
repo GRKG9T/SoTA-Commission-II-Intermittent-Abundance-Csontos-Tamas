@@ -1,0 +1,4 @@
+location,coldstart_count,lost_production_hours,methane_output_kwh,bess_deep_discharge,curtailed_kwh,reactor_warm_fraction_pct,reserve_active_hours
+sevilla,29,432,435543.02865877846,28,17.405986209657264,44.21232876712329,0
+morocco,0,0,488186.1281162812,0,0.0,46.57534246575342,0
+scotland,230,4297,193739.48294110267,171,179.25253336517576,27.671232876712327,0
